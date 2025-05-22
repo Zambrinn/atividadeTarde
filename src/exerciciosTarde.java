@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class exerciciosTarde {
     public static void main(String[] args) throws Exception {
-        newArchive("qualquercoisa.txt");
+        ex12();
     }
 
     public static void ex5() {
@@ -17,47 +17,50 @@ public class exerciciosTarde {
         int menu;
         do {
             System.out.println("-- Menu Calculadora --");
-            System.out.println("1 - Soma --");
-            System.out.println("2 - Subtração --");
-            System.out.println("3 - Multiplicação --");
-            System.out.println("4 - Divisão --");
+            System.out.println("1 - Soma -");
+            System.out.println("2 - Subtração -");
+            System.out.println("3 - Multiplicação -");
+            System.out.println("4 - Divisão -");
+            System.out.print("0 - Sair do programa -");
             System.out.print("\nEscolha uma opção: ");
 
             menu = scanner.nextInt();
-            int firstNum, secondNum, result;
+            double firstNum, secondNum, result;
             switch (menu) {
                 case 1:
                     System.out.print("Digite o primeiro valor: ");
-                    firstNum = scanner.nextInt();
+                    firstNum = scanner.nextDouble();
                     System.out.print("Digite o segundo valor: ");
-                    secondNum = scanner.nextInt();
+                    secondNum = scanner.nextDouble();
                     result = firstNum + secondNum;
                     System.out.println("Resultado da soma: " + result);
                     break;
                 case 2:
                     System.out.print("Digite o primeiro valor: ");
-                    firstNum = scanner.nextInt();
+                    firstNum = scanner.nextDouble();
                     System.out.print("Digite o segundo valor: ");
-                    secondNum = scanner.nextInt();
+                    secondNum = scanner.nextDouble();
                     result = firstNum - secondNum;
                     System.out.println("Resultado da subtração: " + result);
                     break;
                 case 3:
                     System.out.print("Digite o primeiro valor: ");
-                    firstNum = scanner.nextInt();
+                    firstNum = scanner.nextDouble();
                     System.out.print("Digite o segundo valor: ");
-                    secondNum = scanner.nextInt();
+                    secondNum = scanner.nextDouble();
                     result = firstNum * secondNum;
                     System.out.println("Resultado da multiplicação: " + result);
                     break;
                 case 4:
                     System.out.print("Digite o primeiro valor: ");
-                    firstNum = scanner.nextInt();
+                    firstNum = scanner.nextDouble();
                     System.out.print("Digite o segundo valor: ");
-                    secondNum = scanner.nextInt();
+                    secondNum = scanner.nextDouble();
                     result = firstNum / secondNum;
                     System.out.println("Resultado da divisão: " + result);
                     break;
+                case 0:
+                    System.exit(0);
             }
         } while (menu != 4);
     }
@@ -138,7 +141,7 @@ public class exerciciosTarde {
 
     public static void ex12() {
         int num = 10;
-        while ( num != 1 ) {
+        while (num != 0) {
             System.out.println(num);
             num--;
         }
